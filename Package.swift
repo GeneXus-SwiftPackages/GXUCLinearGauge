@@ -18,15 +18,15 @@ let package = Package(
 		.target(name: "GXUCLinearGaugeWrapper",
 				dependencies: [
 					"GXUCLinearGauge",
-					.product(name: "GXCoreUI", package: "GXCoreUI", condition: .when(platforms: [.tvOS, .iOS])),
-					.product(name: "GXFoundation", package: "GXFoundation", condition: .when(platforms: [.tvOS, .iOS])),
-					.product(name: "GXObjectsModel", package: "GXObjectsModel", condition: .when(platforms: [.tvOS, .iOS]))
+					.product(name: "GXCoreUI", package: "GXCoreUI", condition: .when(platforms: [.iOS, .tvOS])),
+					.product(name: "GXFoundation", package: "GXFoundation", condition: .when(platforms: [.iOS, .tvOS])),
+					.product(name: "GXObjectsModel", package: "GXObjectsModel", condition: .when(platforms: [.iOS, .tvOS]))
 				],
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXUCLinearGauge",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXUCLinearGauge-1.0.0-beta+20230321182636.xcframework.zip",
-			checksum: "075b5dff4777bc91ad614a2a847720e1b142ff2629deb27b7a77c8f5d05d9e8c"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXUCLinearGauge-1.0.0-beta+20230323104412.xcframework.zip",
+			checksum: "ae756c792beba7b1e9d8591cd3bba7289d854893cf1b77a82f2cff96ac64c5ec"
 		)
 	]
 )
