@@ -25,8 +25,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXUCLinearGauge",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXUCLinearGauge-1.0.0-beta+20230428153652.xcframework.zip",
-			checksum: "731e003b2b67d72864612025c607412ee1504b18028caf8769171a537af2ec8e"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXUCLinearGauge-1.0.0-beta+20230428202437.xcframework.zip",
+			checksum: "6ad16f590dcc252dafd997e482b4283b41c122b6eef4a3cb219b666a18fc2bbc"
 		)
 	]
 )
