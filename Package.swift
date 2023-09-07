@@ -10,7 +10,7 @@ let package = Package(
 			targets: ["GXUCLinearGaugeWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "1.2.0-beta.21")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "1.2.0-beta.22")
 	],
 	targets: [
 		.target(name: "GXUCLinearGaugeWrapper",
@@ -21,8 +21,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXUCLinearGauge",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXUCLinearGauge-1.2.0-beta.21.xcframework.zip",
-			checksum: "d78b5a0bf691ed9087a511bca009c4a1cc2033a8dbb1508b226af8c75e5ce11e"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXUCLinearGauge-1.2.0-beta.22.xcframework.zip",
+			checksum: "68c8bb2582bf6e4541e49c2e453b65c22e18b03a60841f1634b20e88a594e2f7"
 		)
 	]
 )
