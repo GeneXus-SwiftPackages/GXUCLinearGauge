@@ -1,32 +1,28 @@
-// swift-tools-version: 5.7
+// swift-tools-version: 5.9
 import PackageDescription
 
 let package = Package(
 	name: "GXUCLinearGauge",
-	platforms: [.iOS("12.0"), .tvOS("12.0")],
+	platforms: [.iOS("15.0"), .tvOS("18.0"), .visionOS("2.0")],
 	products: [
 		.library(
 			name: "GXUCLinearGauge",
 			targets: ["GXUCLinearGaugeWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "1.1.0"),
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXFoundation.git", exact: "1.1.0"),
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXObjectsModel.git", exact: "1.1.0")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "4.2.0-rc.0")
 	],
 	targets: [
 		.target(name: "GXUCLinearGaugeWrapper",
 				dependencies: [
 					"GXUCLinearGauge",
-					.product(name: "GXCoreUI", package: "GXCoreUI", condition: .when(platforms: [.tvOS, .iOS])),
-					.product(name: "GXFoundation", package: "GXFoundation", condition: .when(platforms: [.tvOS, .iOS])),
-					.product(name: "GXObjectsModel", package: "GXObjectsModel", condition: .when(platforms: [.tvOS, .iOS]))
+					.product(name: "GXCoreUI", package: "GXCoreUI", condition: .when(platforms: [.iOS, .tvOS, .visionOS]))
 				],
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXUCLinearGauge",
-			url: "https://pkgs.genexus.dev/iOS/releases/GXUCLinearGauge-1.1.0.xcframework.zip",
-			checksum: "0e4ebf12e449e411a244f06c649367271f11f12de5ce1ef5a9dfa91b79d48a6a"
+			url: "https://pkgs.genexus.dev/iOS/preview/GXUCLinearGauge-4.2.0-rc.0.xcframework.zip",
+			checksum: "de905e5581defec4d95d9d882a4b85bd266a53b95b6343dc62b90a0632e94e86"
 		)
 	]
 )
